@@ -57,6 +57,7 @@ button {
 
 .buttons {
     padding: 15px;
+
 }
 
 .btns {
@@ -83,3 +84,49 @@ button {
     background-color:#FF2728 ;
     color: #fff;
 }
+
+
+
+
+@media (max-width: 1024px) {
+    .btns {
+      width: 70px;
+      height: 45px;
+      font-size: 20px;
+    }
+  
+    #equals {
+      height: 200px;
+      font-size: 26px;
+    }
+  
+    .screen {
+      font-size: 32px;
+      height: 80px;
+    }
+  }
+  
+
+  @media (max-width: 600px) {
+    .container {
+      transform: scale(0.85); 
+    }
+  
+    .btns {
+      width: 55px;
+      height: 40px;
+      font-size: 16px;
+    }
+  
+    #equals {
+      height: 205px;
+      font-size: 22px;
+    }
+  
+    .screen {
+      font-size: 24px;
+      height: 65px;
+      padding: 15px 10px;
+    }
+  }
+  
