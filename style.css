@@ -67,6 +67,10 @@ button {
     border-radius: 5px;
 }
 
+.btns:active {
+  background-color: #b7b7b7;
+}
+
 .operator {
     background-color:#7D8180 ;
     color: #fff;
@@ -78,6 +82,10 @@ button {
     background-color: #0DE35F;
     color: #fff;
     font-size: 30px;
+}
+
+#equals:active{
+  background-color: #08c550;
 }
 
 #clear {

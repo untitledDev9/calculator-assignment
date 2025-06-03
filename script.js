@@ -20,6 +20,7 @@ allButtons.forEach(btn => {
 })
 
 function equalsTo() {
+
     const expression = screen.textContent;
 
     try {
@@ -29,6 +30,8 @@ function equalsTo() {
     } catch (error) {
         screen.textContent = "Error";
     }
+
+
 }
 
 clear.addEventListener('click', () => {
