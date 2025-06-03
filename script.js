@@ -5,6 +5,8 @@ const allButtons = document.querySelectorAll('.btns')
 
 let text;
 
+
+
 allButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         text = btn.textContent
@@ -23,23 +25,26 @@ allButtons.forEach(btn => {
     })
 })
 
+// Equals To button
+
 function equalsTo() {
-
     const expression = screen.textContent;
-    let cal;
-
     try {
         if (expression) {
-            cal = screen.textContent = eval(expression);
+            screen.textContent = eval(expression);
 
         }
     } catch (error) {
         screen.textContent = "Error";
     }
 
+    if (expression == 'Error') {
+        screen.textContent = ''
+    }
 }
+equals.addEventListener('click', equalsTo)
 
-
+// Clear To button
 
 clear.addEventListener('click', clearScreen)
 
@@ -47,5 +52,5 @@ function clearScreen (){
     screen.textContent = ''
 }
 
-equals.addEventListener('click', equalsTo)
+
 console.log('working')

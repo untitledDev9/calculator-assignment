@@ -93,6 +93,9 @@ button {
     color: #fff;
 }
 
+#clear:active{
+  background-color:#c60707 ; 
+}
 
 
 
