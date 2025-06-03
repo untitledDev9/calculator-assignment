@@ -8,12 +8,16 @@ let text;
 allButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         text = btn.textContent
-        if (text == 'x') {
+        if (text == 'x'){
             text = '*'
+        }
+        if (screen.textContent == 'Error') {
+            screen.textContent = ''
         }
   
         screen.textContent += text 
 
+        
         console.log(text);
         
     })
@@ -22,21 +26,26 @@ allButtons.forEach(btn => {
 function equalsTo() {
 
     const expression = screen.textContent;
+    let cal;
 
     try {
         if (expression) {
-            screen.textContent = eval(expression);
+            cal = screen.textContent = eval(expression);
+
         }
     } catch (error) {
         screen.textContent = "Error";
     }
 
-
 }
 
-clear.addEventListener('click', () => {
+
+
+clear.addEventListener('click', clearScreen)
+
+function clearScreen (){
     screen.textContent = ''
-})
+}
 
 equals.addEventListener('click', equalsTo)
 console.log('working')
